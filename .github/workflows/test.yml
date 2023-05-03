@@ -26,9 +26,5 @@ jobs:
         path: ~/Library/Caches/lima/download
         key: ${{ runner.os }}-vz
     - name: Test
-      uses: nick-invision/retry@v2
-      with:
-        timeout_minutes: 30
-        retry_on: error
-        max_attempts: 3
-        command: ./hack/test-example.sh examples/experimental/vz.yaml
+      run:|
+        ./hack/test-example.sh examples/experimental/vz.yaml
