@@ -26,5 +26,5 @@ jobs:
         path: ~/Library/Caches/lima/download
         key: ${{ runner.os }}-vz
     - name: Test
-      run:|
+      run: |
         ./hack/test-example.sh examples/experimental/vz.yaml
