@@ -27,4 +27,5 @@ jobs:
         key: ${{ runner.os }}-vz
     - name: Test
       run: |
+        bash --version
         ./hack/test-example.sh examples/experimental/vz.yaml
