@@ -28,4 +28,5 @@ jobs:
     - name: Test
       run: |
         bash --version
+        jq --version
         ./hack/test-example.sh examples/experimental/vz.yaml
